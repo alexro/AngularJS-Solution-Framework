@@ -1,0 +1,24 @@
+<div class="row">
+    <table border="1">
+        <thead>
+        <tr>
+            <td ng-click="sort('text')">Text</td>
+            <td ng-click="sort('num')">Number</td>
+            <td ng-click="sort('date')">Date</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in data" class="ng-scope">
+            <td>{{item.text}}</td>
+            <td>{{item.num}}</td>
+            <td>{{item.date}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>
+        Sort column: {{so.sortColumn}}
+    </p>
+    <p>
+        Sort order: {{so.sortOrder}}
+    </p>
+</div>

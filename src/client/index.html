@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="PageController">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet"
+          href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css"/>
+    <style>
+        body {
+            margin: 20px;
+        }
+        .row {
+            padding-bottom: 30px;
+        }
+        td {
+            padding: 5px;
+        }
+        td:nth-child(1) {
+            width: 200px;
+        }
+        td:nth-child(2) {
+            width: 50px;
+            text-align: right;
+        }
+        td:nth-child(3) {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <app-form></app-form>
+    <app-table></app-table>
+    <app-filter></app-filter>
+</div>
+
+<script src="lib/angular/angular.min.js"></script>
+<script src="build/app.js"></script>
+<!--<script src="app/app.js"></script>-->
+<!--<script src="app/storage/storage.js"></script>-->
+<!--<script src="app/page/page.js"></script>-->
+<!--<script src="app/components/form/app.form.js"></script>-->
+<!--<script src="app/components/table/app.table.js"></script>-->
+<!--<script src="app/components/filter/app.filter.js"></script>-->
+</body>
+</html>

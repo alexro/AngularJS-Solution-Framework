@@ -1,0 +1,25 @@
+<div class="row">
+    <form role="form" name="appForm" novalidate>
+        <div class="control-group">
+            <label class="control-label" for="textData">Text Data</label>
+            <div class="controls">
+                <input id="textData" name="textData" type="text" ng-model="textData" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="numData">Numeric Data</label>
+            <div class="controls">
+                <input id="numData" name="numData" type="number" ng-model="numData" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="dateData">Date Data</label>
+            <div class="controls">
+                <input id="dateData" name="dateData" type="date" ng-model="dateData" />
+            </div>
+        </div>
+        <div style="width: 230px">
+            <button class="btn btn-primary pull-right" type="button" ng-click="add()" ng-disabled="!textData || !numData || !dateData">Add</button>
+        </div>
+    </form>
+</div>
